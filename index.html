@@ -2,63 +2,78 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <title>Resultado REPSE - STPS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultado REPSE - BOMINTZHA VERDE S A P I</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 0;
+            background-color: #f4f4f4;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+        .header {
+            background-color: #006341;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .content {
+            max-width: 900px;
+            background-color: white;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         h1 {
+            font-size: 22px;
+            color: #333;
             text-align: center;
-            color: #2a3d66;
-        }
-        .info {
-            margin: 20px 0;
-            font-size: 18px;
+            margin-bottom: 30px;
         }
         .info p {
-            margin: 10px 0;
+            font-size: 16px;
+            margin: 12px 0;
         }
         .info span {
             font-weight: bold;
         }
         .footer {
             text-align: center;
-            margin-top: 30px;
-            font-size: 14px;
+            font-size: 13px;
+            margin-top: 40px;
             color: #777;
         }
         .footer a {
-            color: #2a3d66;
+            color: #006341;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Resultado del Registro de Prestadora de Servicios Especializados</h1>
+    <div class="header">
+        Secretaría del Trabajo y Previsión Social | REPSE
+    </div>
+    <div class="content">
+        <h1>Resultado del Registro en el Padrón de Servicios u Obras Especializados</h1>
         <div class="info">
             <p><span>Razón Social:</span> BOMINTZHA VERDE S A P I</p>
             <p><span>Fecha de Respuesta:</span> 2025-05-26</p>
             <p><span>Formato:</span> STPS/UTD/DGIFT/AR52916/2025</p>
-            <p><span>Estatus:</span> Activa</p>
-            <p><span>Servicios Especializados:</span> Servicios de jardinería y mantenimiento de áreas verdes</p>
+            <p><span>Estatus:</span> En proceso</p>
+            <p><span>Servicios Especializados:</span> Recolección, transporte, tratamiento y disposición final de residuos sólidos y líquidos orgánicos</p>
         </div>
         <div class="footer">
-            <p>Para más información, visita la página oficial de la STPS.</p>
-            <p><a href="https://repse.stps.gob.mx" target="_blank">https://repse.stps.gob.mx</a></p>
+            Consulta oficial en <a href="https://repse.stps.gob.mx" target="_blank">repse.stps.gob.mx</a>
         </div>
     </div>
 </body>
 </html>
+"""
+
+# Guardar el nuevo archivo HTML con encabezado verde
+file_path_green = "/mnt/data/index_VERDE.html"
+with open(file_path_green, "w", encoding="utf-8") as f:
+    f.write(html_content_green)
+
+file_path_green
